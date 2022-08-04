@@ -40,7 +40,6 @@ renderData:
 				<p>
 					{% for tag in post.tags %}
 		  			{%- if tag != "post" -%}
-		  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
 		  			<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
 		  			{%- endif -%}
 					{% endfor %}
